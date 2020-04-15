@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block title %}
+<title> Welcome to KV Pathshaala</title>
+{% endblock title %}
+
+
+{% block content %}
+      <center><h1 >{{index}}</h1></center>
+      <div class="container"><br>
+      <img class="shadow-lg p-3 mb-5 bg-white rounded" src="{% static 'images/school.jpg' %}" alt="Republic Day" class="rounded" height=300 width=350   >
+      <img class="shadow-lg p-3 mb-5 bg-white rounded" src="{% static 'images/one.jpg' %}" alt="Republic Day" class="rounded" height=300 width=350   >
+      <img class="shadow-lg p-3 mb-5 bg-white rounded" src="{% static 'images/two.jpg' %}" alt="Republic Day" class="rounded" height=300 width=350   >
+      </div> 
+
+     <center> <button type="button" class="btn btn-info btn-lg">Learn Anywhere Anytime</button></center>
+       
+ <div>
+    <footer class="bd-footer text-muted">
+  <div class="container-fluid p-3 p-md-5">
+    <ul class="bd-footer-links"><br><br><br>
+      Designed by Mehtav Ul Gani, PGT CS , KV IVRI Bareilly
+      
+  </div>
+</footer>     
+{% endblock%}

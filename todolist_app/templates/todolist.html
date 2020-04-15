@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title> Welcome to Todo List Page</title>
+{% endblock title %}
+
+
+{% block content %}
+<br>
+<form method="POST">
+{% csrf_token %}
+  <br>
+
+<table  class="table table-bordered">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Class</th>
+      <th scope="col">Subject </th>
+      <th scope="col">Chapter</th>
+      <th scope="col">Teacher's Name</th>
+      
+      
+    </tr>
+  </thead>
+
+  <div class="container">
+
+      {%  for obj in alltask %}
+      <tr>
+          <td scope="row">{{obj.Class_name}}</td>
+          <td scope="row">{{obj.subject_name}}</td>
+          <td scope="row"><a href="{{obj.link_name}}">{{obj.chapter_name}}</td>
+          <td>{{obj.teacher_name}}</td>
+          <!--<td><a href="{{obj.link_name}}">{{obj.link_name}}</td>-->
+          
+      </tr>
+    
+      
+      
+      {% endfor %}
+    
+     
+    {{req}}
+  </div>
+
+{% endblock content %}
