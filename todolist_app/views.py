@@ -59,19 +59,19 @@ def bioxii(request):
 
 
 def primary(request):
-    context= {'primary':'Welcome to Primary Classes e-Learning '}
+    context= {'primary':'Welcome to Primary Classes e-Content '}
     return render(request, 'primary.html',context)
 
 def index(request):
-    context= {'index':'Welcome to KV Pathshaala '}
+    context= {'index':'Welcome to KV IVRI Pathshaala '}
     return render(request, 'index.html',context)
 
 
 def secondary(request):
-    context= {'secondary':'Welcome to Secondary Classes e-Learning'}
+    context= {'secondary':'Welcome to Secondary Classes e-Content'}
     return render(request, 'secondary.html',context)
 
 
 def srsec(request):
-    context= {'srsec':'Welcome to Senior Secondary Classes e-Learning'}
+    context= {'srsec':'Welcome to Senior Secondary Classes e-Content'}
     return render(request, 'srsec.html',context)

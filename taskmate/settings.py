@@ -1,5 +1,5 @@
 import os
-import django=heroku
+import django_heroku
 import environ
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -96,7 +96,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'UTC+05:30'
 
 USE_I18N = True
 
@@ -110,5 +110,5 @@ USE_TZ = True
 STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS =[os.path.join(BASE_DIR,'static')]
-django_heroku.setting(locals())
+django_heroku.settings(locals())
 
